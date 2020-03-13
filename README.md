@@ -1,0 +1,2 @@
+# mechtatell.github.io
+хост
