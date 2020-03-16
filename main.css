@@ -3,16 +3,14 @@ body {
   font-size: 20px;
   line-height: 1.1;
   margin: 0;
-  text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 .mainbox {
   width: 100%;
   max-width: 1200px;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -48,7 +46,7 @@ body {
     position: absolute;
     color: black;
     top: 150%;
-    text-align: center;
+    text-align:left;
     font-weight: normal;
     opacity: 1;
     transition: opacity 0.5s linear 0s;
@@ -92,9 +90,17 @@ h1 {
   margin-top: 15vh;
   font-size: 96px;
 }
+
+h2 {
+  margin-top: 0%;
+}
 p {
-  margin: 0 5%;
+  margin: 3% 5%;
   font-size: 24px;
+}
+
+h3 {
+  margin: 8% 8% 4%;
 }
 
 .information {
@@ -120,7 +126,23 @@ p {
 
 #png {
   float: left;
-  margin: 0px 100px 100px;
+  margin: 0px 9% 20px;
+}
+
+ul {
+  margin: 3% 5%;
+  font-size: 24px;
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul{
+  margin: 0% 10%;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #inftext {
@@ -128,5 +150,43 @@ p {
   margin: 60px 0px;
   font-size: 36px;
   text-align: left;
-  margin-right: 5%;
+  margin-left: 0%;
 }
+
+.headerinf {
+  float: top;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    margin-left: 95%;
+    z-index:99991;
+    }
+
+#back-top a{
+    width: 77px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    display:block;
+    text-decoration:none;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    text-align: center;
+
+    }
+
+#back-top a:hover{
+    height: 70px;
+    background: #000000;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    color: white;
+    }
