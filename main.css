@@ -5,13 +5,12 @@ body {
   margin: 0;
 }
 
-
-
 .mainbox {
   width: 100%;
   max-width: 1200px;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Comfortaa';
 }
 
 .line {
