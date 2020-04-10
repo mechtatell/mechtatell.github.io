@@ -103,33 +103,34 @@ h3 {
   height: 0px;
   overflow: hidden;
   opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #information1.animate, #information2.animate, #information3.animate, #information4.animate, #information5.animate {
   height: auto;
-  overflow: auto;
+  overflow:  hidden;
   opacity: 1;
   transform: translateY(-50vh);
   transition: opacity 0.5s linear 0s,transform 0.5s linear 0s;
 }
 #information1.animateL, #information2.animateL, #information3.animateL, #information4.animateL, #information5.animateL {
   height: auto;
-  overflow: auto;
+  overflow:  hidden;
   opacity: 1;
   transform: translate(-50vh);
   transition: opacity 1s linear 0s,transform 1s linear 0s;
 }
 
 #png {
-  float: left;
   margin: 5% 5% 5% 15%;
+  max-width: 40%;
 }
 
 ul {
   margin: 3% 5%;
   font-size: 22px;
   list-style-type: disc;
-  padding-left: 15%
 }
 
 a {
@@ -140,16 +141,14 @@ a {
 
 #inftext {
   font-size: 22px;
-  width: 700px;
+  width: 850px;
   margin: 0 auto;
-  float: left;
-  padding-left: 25%;
 }
 
 #inftext p {
-  padding-left: 15%
+  width: 700px;
+  margin: 0 auto;
 }
-
 h3 {
     margin: 8% 8% 4%;
 }
@@ -158,12 +157,10 @@ h3 {
   margin-top: 200px;
   font-size: 36px;
   text-align: center;
-  padding-left: 15%
 }
 
 
 .headerinf {
-  float: left;
   margin: 2% 0% 20% 0%;
   font-size: 54px;
   font-weight: bold;
@@ -221,7 +218,50 @@ nav ul li {
   font-family: 'Comfortaa';
 }
 
+#information2 h2, #information2 h3 {
+  color: #250f61;
+  font-family: 'Comfortaa';
+}
+
+#information2 .headerinf h2 {
+border-bottom: 2px solid #250f61;
+padding-bottom: 20px;
+}
+
+#information3 h2, #information3 h3 {
+  color: #37694d;
+  font-family: 'Comfortaa';
+}
+
+#information3 .headerinf h2 {
+border-bottom: 2px solid #37694d;
+padding-bottom: 20px;
+}
+
+#information4 h2, #information3 h3 {
+  color: #542859;
+  font-family: 'Comfortaa';
+}
+
+#information4 .headerinf h2 {
+border-bottom: 2px solid #542859;
+padding-bottom: 20px;
+}
+
+#information5 h2, #information3 h3 {
+  color: #1e6367;
+  font-family: 'Comfortaa';
+}
+
+#information5 .headerinf h2 {
+border-bottom: 2px solid #1e6367;
+padding-bottom: 20px;
+}
+
 #information img {
-  margin: 0 auto;
-  padding-left: 20%;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
