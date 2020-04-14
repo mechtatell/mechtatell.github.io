@@ -5,6 +5,8 @@ body {
   margin: 0;
 }
 
+
+
 .mainbox {
   width: 100%;
   max-width: 1200px;
@@ -105,6 +107,11 @@ h3 {
   flex-wrap: wrap;
 }
 
+.headdd {
+  display: flex;
+  margin: 0 auto;
+}
+
 #information1.animate, #information2.animate, #information3.animate, #information4.animate, #information5.animate {
   height: auto;
   overflow:  hidden;
@@ -120,10 +127,6 @@ h3 {
   transition: opacity 1s linear 0s,transform 1s linear 0s;
 }
 
-#png {
-  margin: 5% 5% 5% 15%;
-  max-width: 40%;
-}
 
 ul {
   margin: 3% 5%;
@@ -147,6 +150,7 @@ a {
   width: 700px;
   margin: 0 auto;
 }
+
 h3 {
     margin: 8% 8% 4%;
 }
@@ -159,11 +163,16 @@ h3 {
 
 
 .headerinf {
-  margin: 2% 0% 20% 0%;
+  margin: 0% 0% 0% 5%;
+
   font-size: 54px;
   font-weight: bold;
-  max-width: 40%;
+  max-width: 50%;
   font-family: 'Comfortaa';
+}
+
+#png {
+  margin: 5% 0% 0% 0%;
 }
 
 nav ul {
@@ -236,7 +245,7 @@ border-bottom: 2px solid #37694d;
 padding-bottom: 20px;
 }
 
-#information4 h2, #information4 h3 {
+#information4 h2, #information3 h3 {
   color: #542859;
   font-family: 'Comfortaa';
 }
@@ -246,7 +255,7 @@ border-bottom: 2px solid #542859;
 padding-bottom: 20px;
 }
 
-#information5 h2, #information5 h3 {
+#information5 h2, #information3 h3 {
   color: #1e6367;
   font-family: 'Comfortaa';
 }
