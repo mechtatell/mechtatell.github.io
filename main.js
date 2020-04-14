@@ -9,6 +9,7 @@ var moveFlag2 = false;
 var moveFlag3 = false;
 var moveFlag4 = false;
 var moveFlag5 = false;
+var moveFlagA = false;
 
 function disableSub() {
   sub1.style.display="none";
@@ -38,6 +39,9 @@ function removePrev() {
   if (moveFlag5) {
     information5.classList.remove('animate');
     el5.classList.remove('animate');
+  }
+  if (moveFlagA) {
+    infA.classList.remove('animate');
   }
 }
 
@@ -93,5 +97,17 @@ function move5() {
   removePrev();
   el5.classList.add('animate');
   information5.classList.add('animate');
+  fcall = false;
+}
+
+function moveA() {
+  if (fcall) {
+  hoba();
+  disableSub(); }
+  moveFlagA = true;
+  removePrev();
+
+  infA.classList.add('animate');
+
   fcall = false;
 }

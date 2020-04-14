@@ -2,7 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.1;
-  margin: 0;
 }
 
 .mainbox {
@@ -105,20 +104,14 @@ h3 {
   flex-wrap: wrap;
 }
 
-#information1.animate, #information2.animate, #information3.animate, #information4.animate, #information5.animate {
+#information1.animate, #information2.animate, #information3.animate, #information4.animate, #information5.animate, #infA.animate {
   height: auto;
   overflow:  hidden;
   opacity: 1;
   transform: translateY(-50vh);
   transition: opacity 0.5s linear 0s,transform 0.5s linear 0s;
 }
-#information1.animateL, #information2.animateL, #information3.animateL, #information4.animateL, #information5.animateL {
-  height: auto;
-  overflow:  hidden;
-  opacity: 1;
-  transform: translate(-50vh);
-  transition: opacity 1s linear 0s,transform 1s linear 0s;
-}
+
 
 #png {
   margin: 5% 5% 5% 15%;
@@ -134,6 +127,20 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#infAblock {
+  margin: 0% 0% 0% 10%;
+  overflow: hidden;
+  height: auto;
+  font-size: 36px;
+}
+
+#infA ul {
+  list-style-type: none;
+  font-size: 32px;
+  margin: 3% 0% 0% 3%;
+  padding-left: 0%
 }
 
 
@@ -209,7 +216,41 @@ nav ul li {
     -o-transition: all linear 0.2s;
     transition: all linear 0.2s;
     color: white;
-    }
+}
+
+#author {
+        position: fixed;
+        bottom: 0px;
+        padding: 0px;
+        margin-left: 90%;
+        z-index:99991;
+}
+
+#author a{
+        width: 77px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.25);
+        display:block;
+        text-decoration:none;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        transition: all linear 0.2s;
+        text-align: center;
+
+}
+
+#author a:hover{
+        height: 70px;
+        background: #000000;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        transition: all linear 0.2s;
+        color: white;
+}
 
 #information1 h2, #information1 h3 {
   color: #ab2b2d;
@@ -256,8 +297,6 @@ border-bottom: 2px solid #1e6367;
 padding-bottom: 20px;
 }
 
-#information img {
-}
 
 .break {
   flex-basis: 100%;
